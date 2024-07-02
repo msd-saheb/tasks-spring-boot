@@ -1,4 +1,4 @@
-# Task1 : Alice and her Bakery
+# Homework 1 : Alice and her Bakery
 
 Alice loves baking cakes and wants to create a program that helps her manage different types of cakes. In this program, we'll create a class called `CakeBaker` that relies on two other classes, `Frosting` and `Syrup`. We'll also use dependency injection to ensure the `CakeBaker` class can easily get the types of frosting and syrup it needs.
 
