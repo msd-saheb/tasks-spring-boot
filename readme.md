@@ -18,3 +18,51 @@ We will create two implementations for each interface:
 2. `StrawberryFrosting` implementing the `Frosting` interface.
 3. `ChocolateSyrup` implementing the `Syrup` interface.
 4. `StrawberrySyrup` implementing the `Syrup` interface.
+
+# Task 2 : Department REST API
+
+This project demonstrates a simple REST API for managing `Department` entities using Spring Boot.
+
+## Department Entity
+
+The `Department` entity has the following fields:
+- `id`: The unique identifier for the department.
+- `title`: The title of the department.
+- `isActive`: A boolean indicating if the department is active.
+- `createdAt`: The date and time when the department was created.
+- `numberOfEmployees`: The number of employees in the department.
+- `password`: The password for the department.
+
+## REST Endpoints
+
+### Get All Departments
+
+**URL:** `/departments`  
+**Method:** `GET`  
+**Description:** Retrieves a list of all departments.
+
+**Response:**
+```json
+{
+    "data": [
+        {
+            "id": 1,
+            "title": "HR",
+            "createdAt": "2023-07-09T10:00:00",
+            "numberOfEmployees": 25,
+            "password": "ExamplePass1$",
+            "isActive": true
+        },
+        {
+            "id": 2,
+            "title": "Finance",
+            "createdAt": "2023-07-09T10:00:00",
+            "numberOfEmployees": 15,
+            "password": "ExamplePass2$",
+            "isActive": true
+        }
+    ],
+    "timeStamps": "2024-07-09T11:39:00.505628",
+    "error": null
+}
+
